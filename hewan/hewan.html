@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HEWAN </title>
+
+    <script>       
+
+        function pilih(){
+                // ambil area select id=hewan
+                let list = document.getElementById("hewan");
+                let idx = list.selectedIndex;
+                console.log("hewan pilihan anda " + list[idx].value);
+                let area_gambar = document.getElementById("gambar");
+                area_gambar.src="gambar/"+list[idx].value+".jpg";
+            }
+   
+
+    </script>
+
+</head>
+<body>
+    <form>
+        <b>PILIH HEWAN </b>: <select name="hewan" id="hewan" onchange="pilih()">
+            <option value="gajah">gajah </option> 
+            <option value="harimau">harimau </option>
+            <option value="kambing">kambing </option>
+            <option value="kucing">kucing </option>
+            <option value="kuda"> kuda </option>
+            <option value="rusa"> rusa </option>
+            <option value="sapi"> sapi </option>
+
+        </select>
+
+
+    </form>
+    
+    
+   
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <center>
+        <h1>Login</h1>
+    </center>
+
+</head>
+<body>
+
+
+
+    <script language="JavaScript">
+        function Login(){
+       
+        var username=document.login.username.value;
+        username=username.toLowerCase();
+        var password=document.login.password.value;
+        password=password.toLowerCase();
+       
+            if (username=="alipia" && password=="00000"){
+            alert("Login Berhasil");
+            }
+            else{
+            alert("Username dan Password yang anda masukkan salah!");
+            }
+        }       
+        </script>
+       
+    <center>
+        <form name="login">
+            <table width="300" cellpadding="5">
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="Login" onClick="Login()"></td>
+            </tr>
+            </table>
+
+    </center>
+</body>
+</html>
